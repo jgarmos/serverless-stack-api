@@ -4,7 +4,7 @@ export default function handler(lambda){
 
         try{
             //run the lambda
-            body = await lambda (event, context);
+            body = await lambda(event, context);
             statusCode = 200;
         } catch (e) {
             console.log(e);

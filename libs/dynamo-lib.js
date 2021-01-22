@@ -6,7 +6,7 @@ import AWS from "aws-sdk";
 // client.
 AWS.config.update({ region: "eu-west-2" });
 
-const dynamoDb = new  AWS.DynamoDB.DocumentClient();
+const client = new  AWS.DynamoDB.DocumentClient();
 
 export default {
     get: (params) => client.get(params).promise(),
